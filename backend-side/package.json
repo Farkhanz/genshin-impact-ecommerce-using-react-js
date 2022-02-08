@@ -1,0 +1,29 @@
+{
+  "name": "backend-side",
+  "version": "1.0.0",
+  "description": "Side backend Genshin E-Commerce",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Farkhanz/genshin-impact-ecommerce-using-react-js.git"
+  },
+  "author": "Khaanz.uwu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Farkhanz/genshin-impact-ecommerce-using-react-js/issues"
+  },
+  "homepage": "https://github.com/Farkhanz/genshin-impact-ecommerce-using-react-js#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.15.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
