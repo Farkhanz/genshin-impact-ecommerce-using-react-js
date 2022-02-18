@@ -1,0 +1,30 @@
+GET http://localhost:2000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjAsIm5hbWUiOiJSYWlkZW4iLCJlbWFpbCI6InJhaWRlbkBnbWFpbC5jb20iLCJpYXQiOjE2NDUwODIyNTcsImV4cCI6MTY0NTA4MjI3Mn0.X-XPtpF85ginoP9zYL3mtBjWjUScX2peUsssJVC4-RA
+
+###
+POST http://localhost:2000/users
+Content-Type: application/json
+
+{
+    "name": "Raiden",
+    "email": "raiden@gmail.com",
+    "password": "123456",
+    "confirmPassword":  "123456",
+    "address": "Inazuma",
+    "phone_number": "09921837192"
+}
+
+###
+POST http://localhost:2000/login
+Content-Type: application/json
+
+{
+    "email": "raiden@gmail.com",
+    "password": "123456"    
+}
+
+###
+GET http://localhost:2000/token
+
+###
+DELETE http://localhost:2000/Logout
