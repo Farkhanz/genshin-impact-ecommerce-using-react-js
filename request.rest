@@ -1,0 +1,28 @@
+GET http://localhost:2000/products
+
+### 
+GET http://localhost:2000/products/2
+
+###
+POST http://localhost:2000/products
+Content-Type: application/json
+
+{
+    "name": "Primogems",
+    "quantity": 60,
+    "price": 120000
+}
+
+### send request for update products 
+PATCH http://localhost:2000/products/2 
+Content-Type: application/json
+
+{
+    "name": "Simp Keqing", 
+    "quantity": 100, 
+    "price": 55000
+}
+
+### send request for deleted products 
+DELETE http://localhost:2000/products/2
+
