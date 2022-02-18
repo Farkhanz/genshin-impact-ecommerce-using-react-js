@@ -28,12 +28,12 @@ const Catalog = () => {
                             Primordial Jade Winged Spear
                         </CardTitle>
                         <CardSubtitle className="mb-2 text-muted" tag="h6">
-                            Weapon
+                            Weapon Spear
                         </CardSubtitle>
                         <CardText>
                             This is a wider card with supporting text
                         </CardText>
-                        <Button>
+                        <Button className='button is-primary mt-2'>
                             Button
                         </Button>
                     </CardBody>
@@ -41,24 +41,24 @@ const Catalog = () => {
                 <Card>
                     <CardImg
                         alt="Card image cap"
-                        src="https://picsum.photos/318/180"
+                        src="https://www.touchtapplay.com/wp-content/uploads/2022/02/Genshin-Impact-2.5-Kagura-Verity.jpg"
                         top
                         width="100%"
                     />
                     <CardBody>
                         <CardTitle tag="h5">
-                            Card title
+                            Kagura Verity
                         </CardTitle>
                         <CardSubtitle
                             className="mb-2 text-muted"
                             tag="h6"
                         >
-                            Card subtitle
+                            Weapon Catalyst
                         </CardSubtitle>
                         <CardText>
-                            This card has supporting text below as a natural lead-in to additional content.
+                            This is a wider card with supporting text
                         </CardText>
-                        <Button>
+                        <Button className='button is-primary mt-2'>
                             Button
                         </Button>
                     </CardBody>
@@ -66,24 +66,24 @@ const Catalog = () => {
                 <Card>
                     <CardImg
                         alt="Card image cap"
-                        src="https://picsum.photos/318/180"
+                        src="https://i.ytimg.com/vi/9h2TpNpQS40/maxresdefault.jpg"
                         top
                         width="100%"
                     />
                     <CardBody>
                         <CardTitle tag="h5">
-                            Card title
+                            Aquila Favonia
                         </CardTitle>
                         <CardSubtitle
                             className="mb-2 text-muted"
                             tag="h6"
                         >
-                            Card subtitle
+                            Weapon Sword
                         </CardSubtitle>
                         <CardText>
-                            This card has supporting text below as a natural lead-in to additional content.
+                            This is a wider card with supporting text
                         </CardText>
-                        <Button>
+                        <Button className='button is-primary mt-2'>
                             Button
                         </Button>
                     </CardBody>
@@ -94,24 +94,24 @@ const Catalog = () => {
                 <Card>
                     <CardImg
                         alt="Card image cap"
-                        src="https://picsum.photos/318/180"
+                        src="https://clutchpoints.com/wp-content/uploads/2021/10/Should-you-pull-for-Polar-Star-in-Genshin-Impact-Is-Polar-Star-strong-.jpg"
                         top
                         width="100%"
                     />
                     <CardBody>
                         <CardTitle tag="h5">
-                            Card title
+                            Polar Star
                         </CardTitle>
                         <CardSubtitle
                             className="mb-2 text-muted"
                             tag="h6"
                         >
-                            Card subtitle
+                            Weapon Bow
                         </CardSubtitle>
                         <CardText>
-                            This card has supporting text below as a natural lead-in to additional content.
+                            This is a wider card with supporting text
                         </CardText>
-                        <Button>
+                        <Button className='button is-primary mt-2'>
                             Button
                         </Button>
                     </CardBody>
@@ -119,7 +119,7 @@ const Catalog = () => {
                 <Card>
                     <CardImg
                         alt="Card image cap"
-                        src="https://picsum.photos/318/180"
+                        src="https://img.game8.co/3289956/74f159ff21ce2dcdefa366416a8f5e93.png/show"
                         top
                         width="100%"
                     />
@@ -134,9 +134,9 @@ const Catalog = () => {
                             Card subtitle
                         </CardSubtitle>
                         <CardText>
-                            This card has supporting text below as a natural lead-in to additional content.
+                            This is a wider card with supporting text
                         </CardText>
-                        <Button>
+                        <Button className='button is-primary mt-2'>
                             Button
                         </Button>
                     </CardBody>
@@ -144,7 +144,7 @@ const Catalog = () => {
                 <Card>
                     <CardImg
                         alt="Card image cap"
-                        src="https://picsum.photos/318/180"
+                        src="https://static1.srcdn.com/wordpress/wp-content/uploads/2020/10/Genshin-Impact-Intertwined-Fates-and-Acquaint-Fates.png.jpg"
                         top
                         width="100%"
                     />
@@ -159,9 +159,9 @@ const Catalog = () => {
                             Card subtitle
                         </CardSubtitle>
                         <CardText>
-                            This card has supporting text below as a natural lead-in to additional content.
+                            This is a wider card with supporting text
                         </CardText>
-                        <Button>
+                        <Button className='button is-primary mt-2'>
                             Button
                         </Button>
                     </CardBody>
