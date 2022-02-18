@@ -1,27 +1,38 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
-import React from 'react';
-// import { Alert } from 'react-bootstrap';
+import { useParams } from 'react-router-dom';
 
-const AddProduct = () => {
+const EditProduct = () => {
   const [name,setName] = useState('');
   const [quantity,setQuantity] = useState('');
   const [price,setPrice] = useState('');
+  const { id } =  useParams();
 
-  const SaveProduct = async (x) => {
+  const UpdateProduct = async (x) => {
     x.preventDefault();
-    await axios.post('http://localhost:2000/products',{
+    await axios.patch(`http://localhost:2000/products/${id}`,{
         name: name,
         quantity: quantity,
         price: price
     })
     .then(() => {
         window.location = '/ProductList';
-    })
+    });
+  }
+
+  useEffect(() => {
+      getProductById();
+  }, []);
+
+  const getProductById = async () => {
+    const response = await axios.get(`http://localhost:2000/products/${id}`);
+    setName(response.data.name);
+    setQuantity(response.data.quantity);
+    setPrice(response.data.price);
   }
   return (
       <div>
-          <form onSubmit={ SaveProduct }>
+          <form onSubmit={ UpdateProduct }>
               <div className='field'>
                   <label className='label'>Name Product</label>
                   <input className="input" type="text" placeholder="What's name products?" value={name} onChange={ (printing) => setName(printing.target.value) } />
@@ -38,11 +49,11 @@ const AddProduct = () => {
               </div>
 
               <div className='field'>
-                  <button className='button is-medium is-primary' style={{ marginTop:2 }}>Save Product</button>
+                  <button className='button is-medium is-primary' style={{ marginTop:2 }}>Update Product</button>
               </div>
           </form>
       </div>
   )
 };
 
-export default AddProduct;
+export default EditProduct;
